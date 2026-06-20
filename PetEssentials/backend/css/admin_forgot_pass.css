@@ -1,0 +1,92 @@
+body {
+    background-image: url('http://localhost/PetEssentials/backend/images/adminBG.png');
+    background-size: cover;
+    text-align: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Chivo", sans-serif;
+    font-style: normal;
+  }
+
+#imglogo {
+    margin-top: 20px;
+    height: 60px;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.form-container {
+    background-color: #FFFFFF;
+    width: 325px;
+    padding: 10px;
+    border-radius: 20px;
+    margin: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.inputs-container {
+    text-align: left;
+    margin-left: 20px;
+}
+
+input[type="email"]{
+    display: block;
+    background-color: rgb(250, 228, 228);
+    border: none;
+    width: 270px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 7px;
+    color: #000000;
+    padding-left: 12px;
+    outline: none; 
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.email-container {
+    display: flex;
+    align-items: center; 
+    padding-right: 10px;  
+    background-color: rgb(250, 228, 228);
+    border-radius: 10px;
+    width: 275px;
+    height: 49.5px;  
+    border: 1px solid #FD9596;
+}
+
+.envelope-icon {
+    color: #e8696b;
+    margin-left: 15px;
+}
+
+
+#btnbacklogin, #btntootp {
+    cursor: pointer;
+    background-color: #FD9596;
+    width: 140px;
+    height: 47px;
+    border: none;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#btnbacklogin:hover, #btntootp:hover {
+    background-color: #e8696b; 
+    color: #FFFFFF;
+}

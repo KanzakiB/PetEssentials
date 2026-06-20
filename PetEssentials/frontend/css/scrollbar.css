@@ -1,0 +1,19 @@
+/*scrollbar*/
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff; /* Background of the scrollbar track */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ff8486; 
+    border-radius: 10px;
+    border: 3px solid #ff8486; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #ff8486; 
+}

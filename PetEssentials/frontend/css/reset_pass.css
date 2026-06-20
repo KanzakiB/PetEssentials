@@ -1,0 +1,199 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url('http://localhost/PetEssentials/backend/images/adminBG.png');
+    background-size: cover;
+    text-align: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Chivo", sans-serif;
+    font-style: normal;
+}
+
+header {
+    position: fixed;  
+    top: 0;          
+    left: 0;          
+    width: 100%;      
+    z-index: 1000;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(250, 228, 228); 
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-btn-container {
+    margin-right: 30px;
+}
+
+#imglogo {
+    height: 30px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;    
+}
+
+nav ul li a:hover {
+    border-bottom: 3px solid #000000;
+    transform: transition 0.5 ease;
+}
+
+#btn-login, #btn-signup {
+    border: none;
+    background-color: rgb(250, 228, 228); 
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #000;
+}
+  
+#btn-login {
+    margin-right: 10px;
+}
+
+#btn-signup,#btn-login {
+    background-color: #FD9596; 
+    padding: 7px 20px;
+    border-radius: 10px;
+}
+
+#btn-signup:hover, #btn-login:hover {
+    background-color: #e8696b; 
+    color: #FFFFFF;
+}
+
+/*form*/
+.container {
+    margin-top: 200px;
+    margin-bottom: 180px;
+}
+
+.form-container {
+    background-color: #FFFFFF;
+    width: 325px;
+    padding: 10px;
+    border-radius: 20px;
+    margin: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.inputs-container {
+    text-align: left;
+    margin-left: 20px;
+}
+
+input[type="password"],
+input[type="text"] {
+    display: block;
+    background-color: rgb(250, 228, 228);
+    border: none;
+    width: 240px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 7px;
+    color: #000000;
+    padding-left: 12px;
+    outline: none; 
+}
+
+form label {
+    margin-top: 20px;
+    display: block;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+#btnresetpass {
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #FD9596;
+    width: 290px;
+    height: 47px;
+    border: none;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#btnresetpass:hover {
+    background-color: #e8696b; 
+    color: #FFFFFF;
+}
+
+.resetpass-container, .resetconfirmpass-container {
+    display: flex;
+    align-items: center; 
+    padding-right: 10px;  
+    background-color: rgb(250, 228, 228);
+    border-radius: 10px;
+    height: 49.5px;  
+    width: 275px;
+    border: 1px solid #FD9596;
+    margin-bottom: 20px;
+}
+
+.password-lock-icon {
+    color: #e8696b;
+    margin-left: 15px;
+}
+
+.pw-signup-icon,
+.cwp-signup-icon {
+    cursor: pointer;
+    margin-left: 10px; 
+}
+
+.pw-signup-icon i,
+.cwp-signup-icon {
+    font-size: 18px;
+    color: #000000;
+    transition: color 0.3s ease-in-out;
+}
+
+.pw-signup-icon i:hover,
+.cwp-signup-icon i:hover {
+    color: #e8696b;
+}
+
+#LoginA {
+    color: #e8696b;
+}
+
+#requirements {
+    text-align: left;
+    margin-left: 20px;
+}

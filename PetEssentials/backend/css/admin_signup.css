@@ -1,0 +1,155 @@
+body {
+    background-image: url('http://localhost/PetEssentials/backend/images/adminBG.png');
+    background-size: cover;
+    text-align: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Chivo", sans-serif;
+    font-style: normal;
+  }
+
+#imglogo {
+    margin-top: 20px;
+    height: 60px;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.form-container {
+    background-color: #FFFFFF;
+    width: 325px;
+    padding: 10px;
+    border-radius: 20px;
+    margin: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.inputs-container {
+    text-align: left;
+    margin-left: 20px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    display: block;
+    background-color: rgb(250, 228, 228);
+    border: none;
+    width: 240px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 7px;
+    color: #000000;
+    padding-left: 12px;
+    outline: none; 
+}
+
+form label {
+    margin-top: 20px;
+    display: block;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.btn-admin-signup {
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #FD9596;
+    width: 290px;
+    height: 47px;
+    border: none;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.btn-admin-signup:hover {
+    background-color: #e8696b; 
+    color: #FFFFFF;
+}
+
+#ToLogin {
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/*EMAIL INPUT*/
+.email-container{
+    display: flex;
+    align-items: center; 
+    padding-right: 10px;  
+    background-color: rgb(250, 228, 228);
+    border-radius: 10px;
+    height: 49.5px;  
+    width: 275px;
+    border: 1px solid #FD9596;
+    margin-bottom: 20px;
+}
+
+.email-envelope-icon, .password-lock-icon {
+    color: #e8696b;
+    margin-left: 15px;
+}
+
+/*PASSWORD INPUT*/
+.password-container, .confirmpassword-container {
+    display: flex;
+    align-items: center; 
+    padding-right: 10px;  
+    background-color: rgb(250, 228, 228);
+    border-radius: 10px;
+    height: 49.5px;  
+    width: 275px;
+    border: 1px solid #FD9596;
+    margin-bottom: 20px;
+}
+
+#requirements {
+    display: none;
+    text-align: left;
+}
+
+
+.signup-pw-container,
+.signup-confirm-pw {
+    display: flex;
+    align-items: center; 
+    width: 275px;
+    background-color: rgb(250, 228, 228);
+    border-radius: 10px;
+    padding-right: 10px;  
+    height: 49.5px;  
+}
+
+.pw-signup-icon,
+.cwp-signup-icon {
+    cursor: pointer;
+    margin-left: 10px; 
+}
+
+.pw-signup-icon i,
+.cwp-signup-icon {
+    font-size: 18px;
+    color: #000000;
+    transition: color 0.3s ease-in-out;
+}
+
+.pw-signup-icon i:hover,
+.cwp-signup-icon i:hover {
+    color: #e8696b;
+}
+
+#loginA {
+    color: #e8696b;
+}

@@ -1,0 +1,57 @@
+.dashboard-container {
+    padding: 20px;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.stat-card {
+    background: white;
+    transition: transform 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.progress {
+    height: 5px;
+    margin-top: 15px;
+    background-color: #f6f9fc;
+}
+
+.progress-bar {
+    background-color: #5e72e4;
+}
+
+.text-success {
+    color: #2dce89 !important;
+    font-weight: 600;
+}
+
+.card-title {
+    color: #32325d;
+    font-weight: 600;
+}
+
+.card-subtitle {
+    color: #8898aa;
+}
+
+#analyticsChart {
+    height: 300px !important;
+}
+
+@media (max-width: 768px) {
+    .stat-card {
+        margin-bottom: 15px;
+    }
+}

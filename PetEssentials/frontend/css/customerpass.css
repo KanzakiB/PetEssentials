@@ -1,0 +1,389 @@
+body {
+    background-color: #FFFFFF;
+    background-size: cover;
+    text-align: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Chivo", sans-serif;
+    font-style: normal;
+  }
+  header {
+    position: fixed;  
+    top: 0;          
+    left: 0;          
+    width: 100%;      
+    z-index: 1000;  
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(250, 228, 228); 
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  header .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .header-btn-container {
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #imglogo {
+    height: 30px;
+    cursor: pointer;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+  }
+  nav ul li {
+    display: inline;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;    
+  }
+
+  nav ul li a:hover {
+    border-bottom: 3px solid #000000;
+    transform: transition 0.5 ease;
+  }
+
+  section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  #profile-image {
+    height: 30px; 
+    width: 30px;
+    border-radius: 50%; 
+    object-fit: cover;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+
+  #customer-username {
+    font-size: 14px;
+    line-height: 1;
+    max-width: 120px; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+  .profile-container {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.cart-icon {
+    font-size: 22px;
+}
+
+.search-container input[type="text"] {
+    padding: 8px 12px;
+    width: 450px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 14px;
+    border: 1px solid #FD9596;
+}
+
+/* Category dropdown*/
+#category-dropdown {
+    padding: 7.5px;
+    font-size: 14px;
+    margin-left: -15px;
+    border: 1px solid #FD9596;
+    background-color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+.search-icon-btn {
+    padding: 7.5px 10px;
+    margin-left: -12px;
+    border: none;
+    background-color: #FD9596;
+    color: #000000;
+    font-size: 16px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.search-icon-btn:hover {
+    background-color: #e8696b;
+    color: #FFFFFF;
+}
+
+.search-icon-btn i {
+    font-size: 18px;
+}
+
+/*MAIN CONTENT*/
+.main-container {
+    margin-top: 80px;
+    height: 670px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.profile-nav-container{
+    background-color: #ffffff;
+    height: 600px;
+    width: 220px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ddd;
+}
+
+.profile-info-container{
+    background-color: #ffffff;
+    height: 600px;
+    width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ddd;
+}
+
+.profilepic-con {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 15px;
+    margin-left: 20px;
+}
+
+.profilepic-con #customername {
+    font-size: 16px
+}
+
+#profilenav {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.linebr {
+    border: none;
+    height: 0.5px;
+    background-color: #cbcbcb;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.profnav-con {
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+.profnav-con a {
+    display: block; 
+    text-decoration: none; 
+    color: #000000; 
+    font-weight: bold; 
+    text-align: left;
+}
+
+.nava a:hover {
+    color: #e8696b; 
+    cursor: pointer; 
+}
+
+.nava {
+    display: flex; 
+    align-items: center; 
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.nava i {
+    min-width: 20px; 
+    text-align: center; 
+    font-size: 16px; 
+    color: #e8696b;
+}
+
+.nava a {
+    text-decoration: none; 
+    color: #000000; 
+    font-weight: lighter; 
+    font-size: 16px; 
+    text-align: left; 
+    flex: 1; 
+}
+
+.active a{
+    font-weight: bold;
+    color: #e8696b;
+}
+
+.titleprofile {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.titleprofile p{
+    margin-top: -13px;
+    font-size: 15px;
+}
+
+.pass-change-container {
+    background-color: #ffffff;
+    margin-top: 10px;
+    margin-left: 70px;
+    text-align: left;
+}
+
+.current-container, .new-container, .confirm-container {
+    display: flex;
+    align-items: center; 
+    background-color: rgb(250, 228, 228);
+    border-radius: 10px;
+    padding-right: 10px;  
+    height: 49.5px;  
+    width: 275px;
+    border: 1px solid #FD9596;
+}
+
+form label {
+    margin-top: 20px;
+    display: block;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.current-container input, .new-container input, .confirm-container input{
+    display: block;
+    background-color: rgb(250, 228, 228);
+    border: none;
+    width: 240px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 7px;
+    color: #000000;
+    padding-left: 12px;
+    outline: none; 
+}
+
+
+#saveNewPass {
+    cursor: pointer;
+    background-color: #ff8183;
+    width: 285px;
+    height: 47px;
+    border: none;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#saveNewPass:hover {
+    background-color: #e8696b; 
+    color: #FFFFFF;
+}
+
+#newPasswordContainer {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+#requirements, #error-message1, #error-message2, #error-message3 {
+    color: #ff0004;
+}
+
+.current-icon, .new-icon, .cfw-icon {
+    color: #e8696b;
+    margin-left: 15px;
+}
+
+
+.current-icon,
+.new-icon, 
+.cfw-icon{
+    cursor: pointer;
+    margin-left: 10px; 
+}
+
+.current-icon i,
+.new-icon i, 
+.cfw-icon i{
+    font-size: 18px;
+    color: #000000;
+    transition: color 0.3s ease-in-out;
+}
+
+.current-icon i:hover,
+.new-icon i:hover, 
+.cfw-icon i:hover {
+    color: #e8696b;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+/* Modal  */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 250px;
+    text-align: center;
+}
+
+
+#modal-ok-button  {
+    background-color: #ff8183;
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#modal-ok-button:hover {
+    background-color: #e8696b;
+}

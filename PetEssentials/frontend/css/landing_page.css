@@ -1,0 +1,390 @@
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Chivo", sans-serif;
+    font-style: normal;
+  }
+  header {
+    position: fixed;  
+    top: 0;          
+    left: 0;          
+    width: 100%;      
+    z-index: 1000;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(250, 228, 228); 
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  header .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .header-btn-container {
+    margin-right: 30px;
+  }
+
+  #imglogo {
+    height: 30px;
+    cursor: pointer;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+  }
+  nav ul li {
+    display: inline;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;    
+  }
+
+  nav ul li a:hover {
+    border-bottom: 3px solid #000000;
+    transform: transition 0.5 ease;
+  }
+
+  section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  #btn-login, #btn-signup {
+    border: none;
+    background-color: rgb(250, 228, 228); 
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #000;
+  }
+  
+  #btn-login {
+    margin-right: 10px;
+  }
+
+  #btn-signup,#btn-login {
+    background-color: #FD9596; 
+    padding: 7px 20px;
+    border-radius: 10px;
+  }
+
+  #btn-signup:hover, #btn-login:hover {
+    background-color: #e8696b; 
+    color: #FFFFFF;
+  }
+
+
+    /*SECTION 1*/
+
+  .hero {
+    background-image: url('http://localhost/PetEssentials/backend/images/adminBG.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 80px 20px;
+    height: 580px;
+    position: relative;
+  }
+
+  .hero-container {
+    display: flex; 
+    justify-content: flex-end; 
+    height: 100%; 
+    position: relative;
+  }
+
+  .hero-text {
+    margin-top: 100px;
+    max-width: 550px; 
+    text-align: left; 
+    margin-right: 50px; 
+    color: #000; 
+  }
+
+
+  .herobg-container {
+    position: absolute; 
+    bottom: -200px; 
+    left: 30%;
+    transform: translateX(-50%); 
+    width: 100%; 
+    text-align: center; 
+  }
+
+  .herobg-container img {
+    max-width: 100%;
+    height: 750px; 
+    z-index: 1;
+  }
+
+  .hero h1 {
+    font-size: 55px;
+    margin: 0;
+  }
+
+  .hero p {
+    font-size: 30px;
+    margin: 20px 0;
+  }
+
+  .btn-shop-container {
+    margin-top: 40px;
+    position: relative;
+    z-index: 10;
+  }
+
+  .btn-shop {
+    border: none;
+    padding: 10px 20px;
+    background-color: #fff3f3;
+    color: #000000;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-shop:hover {
+    border: #000000 1px solid;
+  }
+
+  /*SECTION 2*/
+
+  .featured-section {
+    height: 550px;
+    background-color: #FFFFFF;
+  }
+
+  .featured-section {
+    margin-bottom: 20px;
+    border-top: 2px solid #eee;
+  }
+  .featured-section h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .featured-section .features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .featured-section .features p{
+    text-align: left;
+  }
+
+  .featured-section .features div {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 190px;
+    height: 315px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .productimg {
+    height: 180px;
+    border-radius: 5px;
+  }
+
+  .btn-container a{
+    color: #000000;
+  }
+
+  .link-container {
+    text-align: left;
+    margin-top: 100px;
+  }
+
+  .link-container a{
+    text-decoration: none;
+    color: #000000;
+    
+  }
+
+  .link-container i{
+    margin-left: 10px;
+  }
+
+  .link-container a:hover {
+    border-bottom: 3px solid #000000;
+  }
+
+
+  .featured-section .features div:hover {
+    border-color: #e8696b; /* Change the border color on hover */
+  }
+  
+  /* Zoom in effect for the image */
+  .productimg {
+    height: 180px;
+    transition: transform 0.3s ease; /* Smooth zoom in */
+  }
+  
+  .features-container:hover .productimg {
+    transform: scale(1.1); /* Zoom in the image on hover */
+  }
+
+  /*SECTION 3*/
+
+
+  .categories-section {
+    background-color: #FD9596;
+    height: 580px;
+
+  }
+
+  .category-container {
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .first-category-container, .second-category-container {
+    width: 640px;
+  }
+
+  .first-category-container h1, .second-category-container h1 {
+    margin-bottom: -10px;
+  }
+
+  .category-line{
+    border-right: solid 3px #000000;
+    margin-right: 20px;
+  }
+
+  .row-category {
+    display: flex;
+  }
+
+  .icon-category {
+    height: 85px;
+    margin-right: 20px;
+  }
+
+  .cat-info {
+    margin-top: -10px;
+  }
+
+  .cat-info h1:hover {
+    color: #FFFFFF;
+  }
+
+  .categories-section h2 {
+    font-size: 30px;
+    margin-top: -5px;
+  }
+
+  /*SECTION 4*/
+
+  .contact-section h2 {
+    font-size: 30px;
+    margin-top: -5px;
+  }
+
+  .contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+  }
+
+  #contactdog {
+    height: 450px;
+  }
+
+  .form-container {
+    padding: 20px;
+  }
+
+  #contact-name, #contact-email, #contact-message {
+    border: 1px solid #000000;
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding: 10px;
+    width: 450px;
+    border-radius: 10px;
+  }
+
+  #contact-message {
+    max-width: 450px;
+    height: 200px;
+  }
+
+  .btn-send {
+    font-size: 16px;
+    padding: 10px;
+    width: 470px;
+    border-radius: 10px;
+    background-color: #FD9596;
+  }
+
+  .btn-send:hover {
+    background-color: #e8696b; 
+    color: #FFFFFF;
+  }
+
+  /*MODAL SUCCESS*/
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0, 0, 0, 0.4); 
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%; 
+  max-width: 400px; 
+  text-align: center;
+}
+
+.message-success h1 {
+  margin-top: -1px;
+}
+
+.message-success p {
+  font-size: 18px;
+}
+
+.modal-footer {
+  margin-top: 20px;
+}
+
+.modal-close {
+  background-color: #FD9596;
+  color: #000000;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  background-color: #e8696b;
+  color: #FFFFFF;
+}
+
