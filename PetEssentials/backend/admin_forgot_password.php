@@ -10,12 +10,12 @@
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';  // Wag na galawin
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'aera.montefalco33@gmail.com';  // email to use
-        $mail->Password   = 'cmcw pnwe fqxx meih';    // App password
+        $mail->Username   = '';  // email to use
+        $mail->Password   = '';    // App password
         $mail->SMTPSecure = 'tls';
         $mail->Port       = 587;
 
-        $mail->setFrom('aera.montefalco33@gmail.com', 'ADMIN THE HAPPY TAILS ');
+        $mail->setFrom('email', 'ADMIN THE HAPPY TAILS ');
         $mail->addAddress($email);    // sino makaka receive $email in the database used
 
         $mail->isHTML(true);
